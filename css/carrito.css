@@ -1,0 +1,23 @@
+/* Estilos para el carrito de compras */
+#carrito {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+#carrito h2 {
+    color: #00E676;
+}
+
+#listaCarrito {
+    list-style: none;
+    padding: 0;
+}
+
+#listaCarrito li {
+    margin-bottom: 10px;
+}
+
+

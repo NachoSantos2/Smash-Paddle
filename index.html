@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smash Paddel - Reservas</title>
+    
+    <!-- Logo -->
+    <link rel="icon" href="Logo/Logo1.ico" type="image/x-icon">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/encabezado.css">
+    <link rel="stylesheet" href="css/tabla.css">
+    <link rel="stylesheet" href="css/pie.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/titulo.css">
+    <link rel="stylesheet" href="css/tiendaRaquetas.css">
+    <link rel="stylesheet" href="css/carrito.css">
+
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header id="encabezado">
+        <section class="menu">
+            <div class="logo-container">
+                <a href="#" class="logo-link">
+                    <h1 class="logo"> SMASH </h1>
+                </a>
+            </div>
+            <div class="menu-rayas">
+                <img src="assets/menu.svg" class="menu-img">
+            </div>
+            <nav class="lista-desplegable">
+                <ul class="menu-lista">
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Inicio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#tienda" class="menu-link">Turnos <img src="assets/arrow.svg" class="menu-arrow"></a>
+                        <ul class="lista-desplegable-turnos">
+                            <li class="menu-inside">
+                                <a href="#turnos" class="menu-link menu-inside-inside">Reserva Ahora</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#contacto" class="menu-link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <!-- Carrito de compras -->
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="listaCarrito"></ul>
+        <p>Total: $<span id="totalCarrito">0.00</span></p>
+        <button id="btnComprar">Comprar</button>
+    </section>
+    
+        
+    <!--Titulo-->
+    <section id="titulo">
+        <h1 class="contenido">Smash Paddle</h1>
+    </section>
+
+    <section id="tienda">
+        <div class="raquetas">
+            <h2 class="tituloCatalogo">Catálogo de Raquetas</h2>
+            <div id="catalogoRaquetas" class="catalogo"></div>
+        </div>
+    </section>
+
+
+    <!-- Contenido de la página -->
+    <main>
+        <!-- Sección de Turnos -->
+        <section id="turnos">
+            <h2 class="titulo">Turnos</h2>
+            <h3 class="subtitulo-turnos">Semana Actual</h3>
+            <!-- Tabla de horarios -->
+            <div class="tabla-desplazable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Día/Hora</th>
+                            <th>15:00</th>
+                            <th>17:00</th>
+                            <th>19:00</th>
+                            <th>20:00</th>
+                            <th>21:00</th>
+                            <th>22:00</th>
+                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td class="horario" data-dia="Lunes" data-hora="15:00"></td>
+                            <td class="horario" data-dia="Lunes" data-hora="17:00"></td>
+                            <td class="horario" data-dia="Lunes" data-hora="19:00"></td>
+                            <td class="horario" data-dia="Lunes" data-hora="20:00"></td>
+                            <td class="horario" data-dia="Lunes" data-hora="21:00"></td>
+                            <td class="horario" data-dia="Lunes" data-hora="22:00"></td>
+                            
+                        </tr>
+                
+                        <tr>
+                            <td>Martes</td>
+                            <td class="horario" data-dia="Martes" data-hora="15:00"></td>
+                            <td class="horario" data-dia="Martes" data-hora="17:00"></td>
+                            <td class="horario" data-dia="Martes" data-hora="19:00"></td>
+                            <td class="horario" data-dia="Martes" data-hora="20:00"></td>
+                            <td class="horario" data-dia="Martes" data-hora="21:00"></td>
+                            <td class="horario" data-dia="Martes" data-hora="22:00"></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Miercoles</td>
+                            <td class="horario" data-dia="Miercoles" data-hora="15:00"></td>
+                            <td class="horario" data-dia="Miercoles" data-hora="17:00"></td>
+                            <td class="horario" data-dia="Miercoles" data-hora="19:00"></td>
+                            <td class="horario" data-dia="Miercoles" data-hora="20:00"></td>
+                            <td class="horario" data-dia="Miercoles" data-hora="21:00"></td>
+                            <td class="horario" data-dia="Miercoles" data-hora="22:00"></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Jueves</td>
+                            <td class="horario" data-dia="Jueves" data-hora="15:00"></td>
+                            <td class="horario" data-dia="Jueves" data-hora="17:00"></td>
+                            <td class="horario" data-dia="Jueves" data-hora="19:00"></td>
+                            <td class="horario" data-dia="Jueves" data-hora="20:00"></td>
+                            <td class="horario" data-dia="Jueves" data-hora="21:00"></td>
+                            <td class="horario" data-dia="Jueves" data-hora="22:00"></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td class="horario" data-dia="Viernes" data-hora="15:00"></td>
+                            <td class="horario" data-dia="Viernes" data-hora="17:00"></td>
+                            <td class="horario" data-dia="Viernes" data-hora="19:00"></td>
+                            <td class="horario" data-dia="Viernes" data-hora="20:00"></td>
+                            <td class="horario" data-dia="Viernes" data-hora="21:00"></td>
+                            <td class="horario" data-dia="Viernes" data-hora="22:00"></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Sabado</td>
+                            <td class="horario" data-dia="Sabado" data-hora="15:00"></td>
+                            <td class="horario" data-dia="Sabado" data-hora="17:00"></td>
+                            <td class="horario" data-dia="Sabado" data-hora="19:00"></td>
+                            <td class="horario" data-dia="Sabado" data-hora="20:00"></td>
+                            <td class="horario" data-dia="Sabado" data-hora="21:00"></td>
+                            <td class="horario" data-dia="Sabado" data-hora="22:00"></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Domingo</td>
+                            <td class="horario" data-dia="Domingo" data-hora="15:00"></td>
+                            <td class="horario" data-dia="Domingo" data-hora="17:00"></td>
+                            <td class="horario" data-dia="Domingo" data-hora="19:00"></td>
+                            <td class="horario" data-dia="Domingo" data-hora="20:00"></td>
+                            <td class="horario" data-dia="Domingo" data-hora="21:00"></td>
+                            <td class="horario" data-dia="Domingo" data-hora="22:00"></td>
+                            
+                        </tr>
+                            
+                    </tbody>
+                </table>
+            </div>
+            <!-- Botón Reserva-->
+            <div class="button-container">
+                <button id="btnReservar" >Reservar Turno</button>
+            </div>
+
+            
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer id="contacto">
+        <div class="contacto">
+            <p>Email: info@smashpaddel.com</p>
+            <p>Teléfono: (123) 456-7890</p>
+        </div>
+        <div class="redes-sociales">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+        <div class="whatsapp-pie">
+            <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-icon-pie">¡Contáctanos en WhatsApp!</a>
+        </div>
+    </footer>
+
+    <!-- Script de JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.3/build/global/luxon.min.js"></script>
+    <script src="javascript/reservas.js"></script>
+    <script src="javascript/catalogo.js"></script>
+
+
+</body>
+</html>

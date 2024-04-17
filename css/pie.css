@@ -1,0 +1,48 @@
+/* Estilos para el pie de página */
+footer {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    margin-top: 30px;
+}
+
+/* Estilos para la sección de contacto en el pie de página */
+.contacto {
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.contacto p {
+    margin: 5px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilos para la sección de redes sociales en el pie de página */
+.redes-sociales a {
+    color: #fff; /* Color del texto de los enlaces */
+    margin: 0 10px; /* Espaciado lateral entre los enlaces */
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+}
+
+.redes-sociales a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón por encima de los enlaces */
+}
+
+/* Estilos para la sección de WhatsApp en el pie de página */
+.whatsapp-pie a {
+    color: #25d366; /* Color del texto de WhatsApp */
+    text-decoration: none; /* Quitar subrayado del enlace */
+}
+
+.whatsapp-pie a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón por encima del enlace */
+}
+
+/* Estilos para el ícono de WhatsApp */
+.whatsapp-icon-pie {
+    display: inline-block;
+    background-color: #fff; /* Color de fondo del ícono */
+    color: #25d366; /* Color del ícono */
+    padding: 10px; /* Espaciado interno del ícono */
+    border-radius: 50%; /* Bordes redondeados */
+    margin-right: 5px; /* Espaciado a la derecha del ícono */
+}

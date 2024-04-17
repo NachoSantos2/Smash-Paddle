@@ -1,0 +1,53 @@
+table {
+    width: 100%; 
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    height: auto;   
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer; 
+}
+
+th {
+    background-color: #ff9100;
+    color: #fff;
+    
+}
+
+td.reservado {
+    background-color: #19ff05;
+}
+
+td.selected {
+    background-color: #ffcc00;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ff9100;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.titulo,.subtitulo-turnos,.titulo-proxima-semana{
+    text-align: center;
+    margin-top: 20px;
+}
+

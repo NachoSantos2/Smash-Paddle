@@ -1,0 +1,58 @@
+#tienda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+}
+
+.raquetas {
+    text-align: center;
+    max-width: 600px; /* Limita el ancho del contenedor para que no se extienda demasiado */
+}
+
+/* Estilos para el contenedor del catálogo */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si no caben en una sola fila */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+/* Estilos para cada raqueta */
+.raqueta {
+    width: 250px; /* Anchura fija para cada raqueta */
+    margin: 10px; /* Espacio entre raquetas */
+    background-color: #FF6D00; /* Color de fondo naranja */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Agrega una transición al hacer hover */
+}
+
+/* Efecto al hacer hover */
+.raqueta:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento */
+}
+
+/* Estilos para el título de la raqueta */
+.raqueta h3 {
+    margin-bottom: 10px;
+    color: #19ff05; /* Color de texto verde */
+}
+
+/* Estilos para la descripción de la raqueta */
+.raqueta p {
+    margin-bottom: 5px;
+    color: #FFD600; /* Color de texto amarillo */
+}
+
+.raqueta {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.raqueta.seleccionada {
+    background-color: #f0f0f0;
+}

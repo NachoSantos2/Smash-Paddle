@@ -1,0 +1,16 @@
+{
+    "reservas": {
+        "Jueves": {
+            "21:00": {
+                "nombre": "Juan",
+                "telefono": "123456789"
+            }
+        },
+        "Sabado": {
+            "20:00": {
+                "nombre": "Lucas",
+                "telefono": "123456789"
+            }
+        }
+    }
+}
